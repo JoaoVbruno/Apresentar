@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Menu</title>
+  <style>
+    .menu {
+      display: none;
+    }
+
+    .menu.show {
+      display: flex;
+      flex-direction: column;
+        
+     
+      
+      padding: 100px;
+      position: absolute;
+      top: 450px;
+      left: 500px;
+      right: 565;
+      z-index: 1;
+      
+    }
+
+    .menu-button {
+        left: 565px;
+      right: 565;
+      z-index: 1;
+        padding: 100px;
+      position: absolute;
+      top: 450px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+   
+    
+    
+	</style>
+    
+    
+    </style>
+  </script>
+</body>
+</html>
+
+     
+    </style>
+</head>
+<body>
+    
+
+        <div class="menu">
+
+            <button onclick="window.location.href='nova.html'"></button>
+
+        </div>
+        <img src="casa.png.png" alt="Image" height="1000" width="1600">
+        
+       
+
+</body>
+<button class="menu-button" onclick="toggleMenu()">Login</button>
+<div class="menu" id="menu">
+  <div class="menu-item" onclick="redirect()">Ops...! Parece que você não possui uma conta. <strong>Crie uma</strong></div>
+</div>
+<script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+    
+    function redirect() 
+    {
+      window.location.href = "nova.html";
+      
+    }
+       
+const toggleBtn = document.getElementById('toggleBtn');
+const menu = document.querySelector('.menu');
+
+toggleBtn.addEventListener('click', function() {
+  menu.classList.toggle('show');
+});
+</script>
+</html>
